@@ -2,139 +2,602 @@
 <html lang="en">
 
 <head>
+
+    <!-- ==========================
+            Basic Meta
+    =========================== -->
+
     <meta charset="UTF-8">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>RK Skill BD</title>
+    <!-- ==========================
+            SEO Meta
+    =========================== -->
 
-    <!-- CSS -->
-    <link rel="stylesheet" href="css/style.css">
+    <title>RK Skill BD | Digital Agency</title>
+
+    <meta name="title" content="RK Skill BD">
+
+    <meta name="description"
+        content="Professional Digital Agency, Online Courses, Tools and Tutorials.">
+
+    <meta name="keywords"
+        content="RK Skill BD, Web Development, Course, Tools, Tutorial, Agency">
+
+    <meta name="author"
+        content="RK Skill BD">
+
+    <!-- ==========================
+            Open Graph
+    =========================== -->
+
+    <meta property="og:title"
+        content="RK Skill BD">
+
+    <meta property="og:description"
+        content="Premium Digital Agency Website">
+
+    <meta property="og:type"
+        content="website">
+
+    <meta property="og:image"
+        content="images/logo.png">
+
+    <!-- ==========================
+            Google Font
+    =========================== -->
+
+    <link rel="preconnect"
+        href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- ==========================
+            Font Awesome
+    =========================== -->
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <!-- ==========================
+            CSS
+    =========================== -->
+
+    <link rel="stylesheet"
+        href="css/style.css">
+
 </head>
 
 <body>
+<div class="cursor"></div>
+<div class="cursor-blur"></div>
 
-    <!-- =======================
-            Navbar Start
-    ======================== -->
+<button class="dark-mode">
+    <i class="fa-solid fa-moon"></i>
+</button>
 
-    <header>
-        <nav class="navbar">
+<button class="live-chat">
+    <i class="fa-solid fa-comments"></i>
+</button>
 
-            <div class="logo">
-                <a href="index.html">RK Skill BD</a>
-            </div>
+<div class="portfolio-filter">
+    <button class="filter-btn active" data-filter="all">All</button>
+    <button class="filter-btn" data-filter="web">Web</button>
+    <button class="filter-btn" data-filter="app">App</button>
+    <button class="filter-btn" data-filter="branding">Branding</button>
+</div>
 
-            <ul class="nav-links">
-                <li><a href="index.html" class="active">Home</a></li>
-                <li><a href="course.html">Course</a></li>
-                <li><a href="tools.html">Tools</a></li>
-                <li><a href="tutorial.html">Tutorial</a></li>
-                <li><a href="service.html">Service</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
+<!--==================================
+        Loader
+===================================-->
 
-            <a href="#" class="btn">Login</a>
+<div class="loader">
 
-            <div class="menu-btn">
-                ☰
-            </div>
+    <div class="spinner"></div>
 
-        </nav>
-    </header>
+</div>
 
-    <!-- =======================
-            Navbar End
-    ======================== -->
+<!--==================================
+        Scroll Progress
+===================================-->
 
+<div class="progress-bar">
 
+    <span></span>
 
-    <!-- =======================
-          Hero Slider Start
-    ======================== -->
+</div>
 
-    <section class="hero">
+<!--==================================
+            Header
+===================================-->
 
-        <div class="slider">
+<header id="header">
 
-            <!-- Slide 1 -->
-            <div class="slide active">
-                <img src="images/slider3.jpg" alt="Slider Image 1">
-            </div>
+<nav class="navbar">
 
-            <!-- Slide 2 -->
-            <div class="slide">
-                <img src="images/slider4.jpg" alt="Slider Image 2">
-            </div>
+<div class="container nav-container">
 
-            <!-- Slide 3 -->
-            <div class="slide">
-                <img src="images/slider3.jpg" alt="Slider Image 3">
-            </div>
+<!-- Logo -->
 
-            <!-- Previous Button -->
-            <button class="prev">&#10094;</button>
+<div class="logo">
 
-            <!-- Next Button -->
-            <button class="next">&#10095;</button>
+<a href="index.html">
 
-            <!-- Dots -->
-            <div class="dots">
-                <span class="dot active"></span>
-                <span class="dot"></span>
-                <span class="dot"></span>
+<img src="images/logo.png"
+alt="RK Skill BD">
+
+<h2>
+
+RK Skill BD
+
+</h2>
+
+</a>
+
+</div>
+
+<!-- Menu -->
+
+<ul class="nav-menu">
+
+<li>
+
+<a href="index.html"
+class="active">
+
+Home
+
+</a>
+
+</li>
+
+<li>
+
+<a href="course.html">
+
+Course
+
+</a>
+
+</li>
+
+<li>
+
+<a href="tools.html">
+
+Tools
+
+</a>
+
+</li>
+
+<li>
+
+<a href="tutorial.html">
+
+Tutorial
+
+</a>
+
+</li>
+
+<li>
+
+<a href="service.html">
+
+Service
+
+</a>
+
+</li>
+
+<li>
+
+<a href="about.html">
+
+About
+
+</a>
+
+</li>
+
+<li>
+
+<a href="contact.html">
+
+Contact
+
+</a>
+
+</li>
+
+</ul>
+
+<!-- Mobile Menu -->
+
+<div class="menu-toggle">
+
+<i class="fa-solid fa-bars"></i>
+
+</div>
+
+</div>
+
+</nav>
+
+</header>
+
+<!--==================================
+            Main
+===================================-->
+
+<main>
+    <!--==================================
+        Hero Section Start
+===================================-->
+
+<section class="hero">
+
+    <div class="hero-slider">
+
+        <!--========== Slide 01 ==========-->
+
+        <div class="slide active">
+
+            <img src="images/slider1.jpg" alt="Hero Slider">
+
+            <div class="overlay"></div>
+
+            <div class="container">
+
+                <div class="hero-content">
+
+                    <span class="hero-subtitle">
+
+                        Welcome To RK Skill BD
+
+                    </span>
+
+                    <h1>
+
+                        Build Your
+
+                        <span class="typed-text"></span>
+
+                    </h1>
+
+                    <p>
+
+                        We provide professional Website Development,
+                        Premium Digital Services, Online Courses,
+                        Smart Tools and Practical Tutorials.
+
+                    </p>
+
+                    <div class="hero-btn">
+
+                        <a href="service.html" class="btn-primary">
+
+                            Get Started
+
+                        </a>
+
+                        <a href="course.html" class="btn-secondary">
+
+                            Explore Courses
+
+                        </a>
+
+                    </div>
+
+                    <div class="hero-info">
+
+                        <div class="info-box">
+
+                            <h3>
+
+                                10K+
+
+                            </h3>
+
+                            <span>
+
+                                Students
+
+                            </span>
+
+                        </div>
+
+                        <div class="info-box">
+
+                            <h3>
+
+                                500+
+
+                            </h3>
+
+                            <span>
+
+                                Projects
+
+                            </span>
+
+                        </div>
+
+                        <div class="info-box">
+
+                            <h3>
+
+                                5★
+
+                            </h3>
+
+                            <span>
+
+                                Rating
+
+                            </span>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
             </div>
 
         </div>
 
-    </section>
 
-    <!-- =======================
-          Hero Slider End
-    ======================== -->
-    <!-- ===========================
-        Our Services Start
-=========================== -->
 
-<section class="services">
+        <!--========== Slide 02 ==========-->
+
+        <div class="slide">
+
+            <img src="images/slider2.jpg" alt="Hero Slider">
+
+            <div class="overlay"></div>
+
+            <div class="container">
+
+                <div class="hero-content">
+
+                    <span class="hero-subtitle">
+
+                        Professional Agency
+
+                    </span>
+
+                    <h1>
+
+                        Modern Digital
+
+                        Solutions
+
+                    </h1>
+
+                    <p>
+
+                        Creative Design,
+
+                        Fast Development,
+
+                        Powerful Marketing.
+
+                    </p>
+
+                    <div class="hero-btn">
+
+                        <a href="service.html" class="btn-primary">
+
+                            Our Services
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+        <!--========== Slide 03 ==========-->
+
+        <div class="slide">
+
+            <img src="images/slider3.jpg" alt="Hero Slider">
+
+            <div class="overlay"></div>
+
+            <div class="container">
+
+                <div class="hero-content">
+
+                    <span class="hero-subtitle">
+
+                        Learn With Experts
+
+                    </span>
+
+                    <h1>
+
+                        Upgrade
+
+                        Your Skills
+
+                    </h1>
+
+                    <p>
+
+                        Premium Courses,
+
+                        Practical Tutorials
+
+                        and Free Digital Tools.
+
+                    </p>
+
+                    <div class="hero-btn">
+
+                        <a href="contact.html" class="btn-primary">
+
+                            Contact Us
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- Navigation -->
+
+        <button class="prev">
+
+            <i class="fa-solid fa-angle-left"></i>
+
+        </button>
+
+        <button class="next">
+
+            <i class="fa-solid fa-angle-right"></i>
+
+        </button>
+
+
+
+        <!-- Dots -->
+
+        <div class="slider-dots">
+
+            <span class="dot active"></span>
+
+            <span class="dot"></span>
+
+            <span class="dot"></span>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!--==================================
+        Hero Section End
+===================================-->
+<!--==================================
+        Trusted Brands Start
+===================================-->
+
+<section class="trusted">
 
     <div class="container">
 
-        <div class="section-heading">
-            <h2>Our Services</h2>
-            <p>We provide professional IT solutions for your business.</p>
+        <div class="trusted-title">
+
+            <span>
+
+                Trusted By 500+ Clients Worldwide
+
+            </span>
+
         </div>
 
-        <div class="service-wrapper">
+        <div class="brand-slider">
 
-            <div class="service-card">
-                <img src="images/service1.png" alt="Web Design">
+            <div class="brand-track">
 
-                <h3>Web Design</h3>
+                <div class="brand-item">
 
-                <p>Creative and modern responsive website design.</p>
+                    <img src="images/logo1.png" alt="Logo">
 
-                <a href="#">Read More</a>
-            </div>
+                </div>
 
-            <div class="service-card">
-                <img src="images/service2.png" alt="Web Development">
+                <div class="brand-item">
 
-                <h3>Web Development</h3>
+                    <img src="images/logo2.png" alt="Logo">
 
-                <p>Fast, secure and scalable website development.</p>
+                </div>
 
-                <a href="#">Read More</a>
-            </div>
+                <div class="brand-item">
 
-            <div class="service-card">
-                <img src="images/service3.png" alt="SEO">
+                    <img src="images/logo3.png" alt="Logo">
 
-                <h3>SEO Optimization</h3>
+                </div>
 
-                <p>Improve your business ranking with SEO service.</p>
+                <div class="brand-item">
 
-                <a href="#">Read More</a>
+                    <img src="images/logo4.png" alt="Logo">
+
+                </div>
+
+                <div class="brand-item">
+
+                    <img src="images/logo5.png" alt="Logo">
+
+                </div>
+
+                <div class="brand-item">
+
+                    <img src="images/logo6.png" alt="Logo">
+
+                </div>
+
+                <!-- Duplicate Logos -->
+
+                <div class="brand-item">
+
+                    <img src="images/logo1.png" alt="Logo">
+
+                </div>
+
+                <div class="brand-item">
+
+                    <img src="images/logo2.png" alt="Logo">
+
+                </div>
+
+                <div class="brand-item">
+
+                    <img src="images/logo3.png" alt="Logo">
+
+                </div>
+
+                <div class="brand-item">
+
+                    <img src="images/logo4.png" alt="Logo">
+
+                </div>
+
+                <div class="brand-item">
+
+                    <img src="images/logo5.png" alt="Logo">
+
+                </div>
+
+                <div class="brand-item">
+
+                    <img src="images/logo6.png" alt="Logo">
+
+                </div>
+
             </div>
 
         </div>
@@ -143,69 +606,93 @@
 
 </section>
 
-<!-- ===========================
-        Our Services End
-=========================== -->
-<!-- ===========================
-        Featured Courses Start
-=========================== -->
+<!--==================================
+        Trusted Brands End
+===================================-->
 
-<section class="courses">
+
+
+
+
+<!--==================================
+        Quick Feature Start
+===================================-->
+
+<section class="quick-feature">
 
     <div class="container">
 
-        <div class="section-heading">
-            <h2>Featured Courses</h2>
-            <p>Choose the best course to improve your skills.</p>
-        </div>
+        <div class="feature-grid">
 
-        <div class="course-wrapper">
+            <div class="feature-box">
 
-            <div class="course-card">
+                <i class="fa-solid fa-code"></i>
 
-                <img src="images/course1.jpg" alt="Course">
+                <h3>
 
-                <div class="course-content">
+                    Modern Development
 
-                    <h3>Full Stack Web Development</h3>
+                </h3>
 
-                    <p>Learn HTML, CSS, JavaScript, PHP & MySQL from scratch.</p>
+                <p>
 
-                    <a href="#" class="course-btn">Enroll Now</a>
+                    Clean, scalable and modern web development solutions.
 
-                </div>
+                </p>
 
             </div>
 
-            <div class="course-card">
+            <div class="feature-box">
 
-                <img src="images/course2.jpg" alt="Course">
+                <i class="fa-solid fa-graduation-cap"></i>
 
-                <div class="course-content">
+                <h3>
 
-                    <h3>Graphic Design</h3>
+                    Premium Courses
 
-                    <p>Master Photoshop, Illustrator & professional design.</p>
+                </h3>
 
-                    <a href="#" class="course-btn">Enroll Now</a>
+                <p>
 
-                </div>
+                    Learn practical skills from industry professionals.
+
+                </p>
 
             </div>
 
-            <div class="course-card">
+            <div class="feature-box">
 
-                <img src="images/course3.jpg" alt="Course">
+                <i class="fa-solid fa-screwdriver-wrench"></i>
 
-                <div class="course-content">
+                <h3>
 
-                    <h3>Digital Marketing</h3>
+                    Smart Tools
 
-                    <p>Learn SEO, Facebook Ads & Google Marketing.</p>
+                </h3>
 
-                    <a href="#" class="course-btn">Enroll Now</a>
+                <p>
 
-                </div>
+                    Powerful online tools to boost productivity.
+
+                </p>
+
+            </div>
+
+            <div class="feature-box">
+
+                <i class="fa-solid fa-headset"></i>
+
+                <h3>
+
+                    24/7 Support
+
+                </h3>
+
+                <p>
+
+                    Dedicated support whenever you need assistance.
+
+                </p>
 
             </div>
 
@@ -215,265 +702,169 @@
 
 </section>
 
-<!-- ===========================
-        Featured Courses End
-=========================== -->
-<!-- ===========================
+<!--==================================
+        Quick Feature End
+===================================-->
+<!--==================================
         Popular Tools Start
-=========================== -->
+===================================-->
 
 <section class="tools">
 
     <div class="container">
 
-        <div class="section-heading">
-            <h2>Popular Tools</h2>
-            <p>Explore our most useful tools for your daily work.</p>
-        </div>
+        <div class="section-header">
 
-        <div class="tool-wrapper">
+            <span>Our Tools</span>
 
-            <div class="tool-card">
-                <img src="images/tool1.png" alt="HTML Tool">
-                <h3>HTML Generator</h3>
-                <p>Create HTML code quickly and easily.</p>
-                <a href="#">Use Tool</a>
-            </div>
-
-            <div class="tool-card">
-                <img src="images/tool2.png" alt="CSS Tool">
-                <h3>CSS Generator</h3>
-                <p>Generate beautiful CSS in seconds.</p>
-                <a href="#">Use Tool</a>
-            </div>
-
-            <div class="tool-card">
-                <img src="images/tool3.png" alt="JavaScript Tool">
-                <h3>JavaScript Tool</h3>
-                <p>Useful JavaScript snippets and utilities.</p>
-                <a href="#">Use Tool</a>
-            </div>
-
-            <div class="tool-card">
-                <img src="images/tool4.png" alt="SEO Tool">
-                <h3>SEO Checker</h3>
-                <p>Analyze your website SEO performance.</p>
-                <a href="#">Use Tool</a>
-            </div>
-
-        </div>
-
-    </div>
-
-</section>
-
-<!-- ===========================
-        Popular Tools End
-=========================== -->
-<!-- ===========================
-        Latest Tutorials Start
-=========================== -->
-
-<section class="tutorials">
-
-    <div class="container">
-
-        <div class="section-heading">
-            <h2>Latest Tutorials</h2>
-            <p>Learn new skills with our latest tutorials.</p>
-        </div>
-
-        <div class="tutorial-wrapper">
-
-            <div class="tutorial-card">
-
-                <img src="images/tutorial1.jpg" alt="Tutorial">
-
-                <div class="tutorial-content">
-                    <h3>HTML Complete Tutorial</h3>
-                    <p>Learn HTML from beginner to advanced level.</p>
-                    <a href="#">Read More</a>
-                </div>
-
-            </div>
-
-            <div class="tutorial-card">
-
-                <img src="images/tutorial2.jpg" alt="Tutorial">
-
-                <div class="tutorial-content">
-                    <h3>CSS Master Class</h3>
-                    <p>Create beautiful responsive websites with CSS.</p>
-                    <a href="#">Read More</a>
-                </div>
-
-            </div>
-
-            <div class="tutorial-card">
-
-                <img src="images/tutorial3.jpg" alt="Tutorial">
-
-                <div class="tutorial-content">
-                    <h3>JavaScript Basics</h3>
-                    <p>Learn modern JavaScript with practical examples.</p>
-                    <a href="#">Read More</a>
-                </div>
-
-            </div>
-
-        </div>
-
-    </div>
-
-</section>
-
-<!-- ===========================
-        Latest Tutorials End
-=========================== -->
-<!-- ===========================
-        Why Choose Us Start
-=========================== -->
-
-<section class="why-us">
-
-    <div class="container">
-
-        <div class="section-heading">
-            <h2>Why Choose Us</h2>
-            <p>We are committed to providing the best digital solutions for our clients.</p>
-        </div>
-
-        <div class="why-wrapper">
-
-            <div class="why-card">
-                <img src="images/icon1.png" alt="">
-                <h3>Expert Team</h3>
-                <p>Experienced professionals delivering quality services.</p>
-            </div>
-
-            <div class="why-card">
-                <img src="images/icon2.png" alt="">
-                <h3>24/7 Support</h3>
-                <p>Always ready to help you whenever you need.</p>
-            </div>
-
-            <div class="why-card">
-                <img src="images/icon3.png" alt="">
-                <h3>Affordable Price</h3>
-                <p>Premium quality services at competitive prices.</p>
-            </div>
-
-            <div class="why-card">
-                <img src="images/icon4.png" alt="">
-                <h3>Fast Delivery</h3>
-                <p>Projects delivered on time without compromising quality.</p>
-            </div>
-
-            <div class="why-card">
-                <img src="images/icon5.png" alt="">
-                <h3>Secure Platform</h3>
-                <p>Your data and projects are always safe with us.</p>
-            </div>
-
-            <div class="why-card">
-                <img src="images/icon6.png" alt="">
-                <h3>Client Satisfaction</h3>
-                <p>Our first priority is customer satisfaction.</p>
-            </div>
-
-        </div>
-
-    </div>
-
-</section>
-
-<!-- ===========================
-        Why Choose Us End
-=========================== -->
-<!-- ===========================
-        Testimonials Start
-=========================== -->
-
-<section class="testimonials">
-
-    <div class="container">
-
-        <div class="section-heading">
-            <h2>What Our Clients Say</h2>
-            <p>Trusted by hundreds of happy clients.</p>
-        </div>
-
-        <div class="testimonial-wrapper">
-
-            <div class="testimonial-card">
-
-                <img src="images/client1.jpg" alt="Client">
-
-                <h3>John Smith</h3>
-
-                <span>Web Developer</span>
-
-                <p>
-                    Excellent service! The team delivered my project on time with outstanding quality.
-                </p>
-
-            </div>
-
-            <div class="testimonial-card">
-
-                <img src="images/client2.jpg" alt="Client">
-
-                <h3>Sarah Johnson</h3>
-
-                <span>Business Owner</span>
-
-                <p>
-                    Very professional team. Highly recommended for any web solution.
-                </p>
-
-            </div>
-
-            <div class="testimonial-card">
-
-                <img src="images/client3.jpg" alt="Client">
-
-                <h3>David Wilson</h3>
-
-                <span>Freelancer</span>
-
-                <p>
-                    Amazing experience. Support was excellent from start to finish.
-                </p>
-
-            </div>
-
-        </div>
-
-    </div>
-
-</section>
-
-<!-- ===========================
-        Testimonials End
-=========================== -->
-<!-- ===========================
-        Call To Action Start
-=========================== -->
-
-<section class="cta">
-
-    <div class="container">
-
-        <div class="cta-content">
-
-            <h2>Ready To Grow Your Business?</h2>
+            <h2>Popular Digital Tools</h2>
 
             <p>
-                Let's build your next website with a professional team.
+
+                Powerful online tools designed to improve your productivity and workflow.
+
             </p>
 
-            <a href="contact.html" class="cta-btn">
-                Contact Us
+        </div>
+
+        <div class="tools-grid">
+
+            <!-- Tool 01 -->
+
+            <article class="tool-card">
+
+                <div class="tool-icon">
+
+                    <img src="images/tool1.png" alt="Image Converter">
+
+                </div>
+
+                <div class="tool-content">
+
+                    <span class="tool-tag">
+
+                        Free Tool
+
+                    </span>
+
+                    <h3>
+
+                        Image Converter
+
+                    </h3>
+
+                    <p>
+
+                        Convert JPG, PNG, WEBP and SVG files in seconds.
+
+                    </p>
+
+                    <a href="tools.html">
+
+                        Use Tool
+
+                        <i class="fa-solid fa-arrow-right"></i>
+
+                    </a>
+
+                </div>
+
+            </article>
+
+            <!-- Tool 02 -->
+
+            <article class="tool-card">
+
+                <div class="tool-icon">
+
+                    <img src="images/tool2.png" alt="PDF Tool">
+
+                </div>
+
+                <div class="tool-content">
+
+                    <span class="tool-tag">
+
+                        Free Tool
+
+                    </span>
+
+                    <h3>
+
+                        PDF Toolkit
+
+                    </h3>
+
+                    <p>
+
+                        Merge, Split, Compress and Protect PDF files online.
+
+                    </p>
+
+                    <a href="tools.html">
+
+                        Use Tool
+
+                        <i class="fa-solid fa-arrow-right"></i>
+
+                    </a>
+
+                </div>
+
+            </article>
+
+            <!-- Tool 03 -->
+
+            <article class="tool-card">
+
+                <div class="tool-icon">
+
+                    <img src="images/tool3.png" alt="Code Formatter">
+
+                </div>
+
+                <div class="tool-content">
+
+                    <span class="tool-tag">
+
+                        Developer
+
+                    </span>
+
+                    <h3>
+
+                        Code Formatter
+
+                    </h3>
+
+                    <p>
+
+                        Beautify HTML, CSS and JavaScript code instantly.
+
+                    </p>
+
+                    <a href="tools.html">
+
+                        Use Tool
+
+                        <i class="fa-solid fa-arrow-right"></i>
+
+                    </a>
+
+                </div>
+
+            </article>
+
+        </div>
+
+        <div class="section-footer">
+
+            <a href="tools.html" class="view-btn">
+
+                View All Tools
+
+                <i class="fa-solid fa-arrow-right"></i>
+
             </a>
 
         </div>
@@ -482,32 +873,1562 @@
 
 </section>
 
-<!-- ===========================
-        Call To Action End
-=========================== -->
-<!-- ===========================
-        Footer Start
-=========================== -->
+<!--==================================
+        Popular Tools End
+===================================-->
+
+
+
+
+
+<!--==================================
+        Services Start
+===================================-->
+
+<section class="services">
+
+    <div class="container">
+
+        <div class="section-header">
+
+            <span>Our Services</span>
+
+            <h2>Professional Digital Services</h2>
+
+            <p>
+
+                We build powerful digital products to help businesses grow faster.
+
+            </p>
+
+        </div>
+
+        <div class="service-grid">
+
+            <!-- Service 01 -->
+
+            <article class="service-card">
+
+                <div class="service-image">
+
+                    <img src="images/service1.jpg" alt="Web Design">
+
+                </div>
+
+                <div class="service-content">
+
+                    <span>
+
+                        Web Design
+
+                    </span>
+
+                    <h3>
+
+                        Modern UI/UX Design
+
+                    </h3>
+
+                    <p>
+
+                        Beautiful responsive websites with modern user experience.
+
+                    </p>
+
+                    <a href="service.html">
+
+                        Learn More
+
+                    </a>
+
+                </div>
+
+            </article>
+
+            <!-- Service 02 -->
+
+            <article class="service-card">
+
+                <div class="service-image">
+
+                    <img src="images/service2.jpg" alt="Development">
+
+                </div>
+
+                <div class="service-content">
+
+                    <span>
+
+                        Development
+
+                    </span>
+
+                    <h3>
+
+                        Website Development
+
+                    </h3>
+
+                    <p>
+
+                        Fast, secure and scalable web applications.
+
+                    </p>
+
+                    <a href="service.html">
+
+                        Learn More
+
+                    </a>
+
+                </div>
+
+            </article>
+
+            <!-- Service 03 -->
+
+            <article class="service-card">
+
+                <div class="service-image">
+
+                    <img src="images/service3.jpg" alt="Marketing">
+
+                </div>
+
+                <div class="service-content">
+
+                    <span>
+
+                        Marketing
+
+                    </span>
+
+                    <h3>
+
+                        Digital Marketing
+
+                    </h3>
+
+                    <p>
+
+                        Grow your business using modern marketing strategies.
+
+                    </p>
+
+                    <a href="service.html">
+
+                        Learn More
+
+                    </a>
+
+                </div>
+
+            </article>
+
+        </div>
+
+        <div class="section-footer">
+
+            <a href="service.html" class="view-btn">
+
+                View All Services
+
+                <i class="fa-solid fa-arrow-right"></i>
+
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!--==================================
+        Services End
+===================================-->
+<!--==================================
+        Featured Courses Start
+===================================-->
+
+<section class="courses">
+
+    <div class="container">
+
+        <div class="section-header">
+
+            <span>Our Courses</span>
+
+            <h2>Featured Courses</h2>
+
+            <p>
+
+                Learn practical skills from industry experts with real-world projects.
+
+            </p>
+
+        </div>
+
+        <div class="course-grid">
+
+            <!-- Course 01 -->
+
+            <article class="course-card">
+
+                <div class="course-image">
+
+                    <img src="images/course1.jpg" alt="Course">
+
+                    <span class="course-badge">
+
+                        Best Seller
+
+                    </span>
+
+                </div>
+
+                <div class="course-content">
+
+                    <div class="course-rating">
+
+                        ⭐⭐⭐⭐⭐
+
+                        <span>(4.9)</span>
+
+                    </div>
+
+                    <h3>
+
+                        Complete Web Development
+
+                    </h3>
+
+                    <p>
+
+                        HTML, CSS, JavaScript, Bootstrap, PHP & MySQL.
+
+                    </p>
+
+                    <div class="course-footer">
+
+                        <span>
+
+                            👨‍🎓 1200 Students
+
+                        </span>
+
+                        <a href="course.html">
+
+                            Enroll Now
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+
+
+            <!-- Course 02 -->
+
+            <article class="course-card">
+
+                <div class="course-image">
+
+                    <img src="images/course2.jpg" alt="Course">
+
+                    <span class="course-badge">
+
+                        New
+
+                    </span>
+
+                </div>
+
+                <div class="course-content">
+
+                    <div class="course-rating">
+
+                        ⭐⭐⭐⭐⭐
+
+                        <span>(5.0)</span>
+
+                    </div>
+
+                    <h3>
+
+                        Graphic Design Masterclass
+
+                    </h3>
+
+                    <p>
+
+                        Photoshop, Illustrator & Professional Branding.
+
+                    </p>
+
+                    <div class="course-footer">
+
+                        <span>
+
+                            👨‍🎓 950 Students
+
+                        </span>
+
+                        <a href="course.html">
+
+                            Enroll Now
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+
+
+            <!-- Course 03 -->
+
+            <article class="course-card">
+
+                <div class="course-image">
+
+                    <img src="images/course3.jpg" alt="Course">
+
+                    <span class="course-badge">
+
+                        Popular
+
+                    </span>
+
+                </div>
+
+                <div class="course-content">
+
+                    <div class="course-rating">
+
+                        ⭐⭐⭐⭐⭐
+
+                        <span>(4.8)</span>
+
+                    </div>
+
+                    <h3>
+
+                        Digital Marketing
+
+                    </h3>
+
+                    <p>
+
+                        SEO, Facebook Ads, Google Ads & Email Marketing.
+
+                    </p>
+
+                    <div class="course-footer">
+
+                        <span>
+
+                            👨‍🎓 860 Students
+
+                        </span>
+
+                        <a href="course.html">
+
+                            Enroll Now
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+        </div>
+
+        <div class="section-footer">
+
+            <a href="course.html" class="view-btn">
+
+                View All Courses
+
+                <i class="fa-solid fa-arrow-right"></i>
+
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!--==================================
+        Featured Courses End
+===================================-->
+
+
+
+
+
+<!--==================================
+        Latest Tutorials Start
+===================================-->
+
+<section class="tutorials">
+
+    <div class="container">
+
+        <div class="section-header">
+
+            <span>Latest Tutorials</span>
+
+            <h2>Latest Learning Articles</h2>
+
+            <p>
+
+                Read our latest tutorials and improve your technical skills.
+
+            </p>
+
+        </div>
+
+        <div class="tutorial-grid">
+
+            <!-- Tutorial 01 -->
+
+            <article class="tutorial-card">
+
+                <div class="tutorial-image">
+
+                    <img src="images/tutorial1.jpg" alt="Tutorial">
+
+                </div>
+
+                <div class="tutorial-content">
+
+                    <span class="tutorial-category">
+
+                        HTML
+
+                    </span>
+
+                    <h3>
+
+                        HTML Complete Beginner Guide
+
+                    </h3>
+
+                    <p>
+
+                        Learn HTML from scratch with practical examples.
+
+                    </p>
+
+                    <div class="tutorial-footer">
+
+                        <span>
+
+                            📅 10 Jun 2026
+
+                        </span>
+
+                        <a href="tutorial.html">
+
+                            Read More
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+
+
+            <!-- Tutorial 02 -->
+
+            <article class="tutorial-card">
+
+                <div class="tutorial-image">
+
+                    <img src="images/tutorial2.jpg" alt="Tutorial">
+
+                </div>
+
+                <div class="tutorial-content">
+
+                    <span class="tutorial-category">
+
+                        CSS
+
+                    </span>
+
+                    <h3>
+
+                        Responsive CSS Layout
+
+                    </h3>
+
+                    <p>
+
+                        Build modern layouts using Flexbox and CSS Grid.
+
+                    </p>
+
+                    <div class="tutorial-footer">
+
+                        <span>
+
+                            📅 14 Jun 2026
+
+                        </span>
+
+                        <a href="tutorial.html">
+
+                            Read More
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+
+
+            <!-- Tutorial 03 -->
+
+            <article class="tutorial-card">
+
+                <div class="tutorial-image">
+
+                    <img src="images/tutorial3.jpg" alt="Tutorial">
+
+                </div>
+
+                <div class="tutorial-content">
+
+                    <span class="tutorial-category">
+
+                        JavaScript
+
+                    </span>
+
+                    <h3>
+
+                        JavaScript DOM Projects
+
+                    </h3>
+
+                    <p>
+
+                        Practice JavaScript with real-world mini projects.
+
+                    </p>
+
+                    <div class="tutorial-footer">
+
+                        <span>
+
+                            📅 18 Jun 2026
+
+                        </span>
+
+                        <a href="tutorial.html">
+
+                            Read More
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+        </div>
+
+        <div class="section-footer">
+
+            <a href="tutorial.html" class="view-btn">
+
+                View All Tutorials
+
+                <i class="fa-solid fa-arrow-right"></i>
+
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!--==================================
+        Latest Tutorials End
+===================================-->
+<!--==================================
+        Statistics Start
+===================================-->
+
+<section class="statistics">
+
+    <div class="container">
+
+        <div class="section-header">
+
+            <span>Our Achievement</span>
+
+            <h2>We Build Success Stories</h2>
+
+            <p>
+
+                Our experience and dedication help businesses grow faster.
+
+            </p>
+
+        </div>
+
+        <div class="statistics-grid">
+
+            <div class="stat-card">
+
+                <div class="stat-icon">
+
+                    <i class="fa-solid fa-users"></i>
+
+                </div>
+
+                <h3 class="counter" data-target="12000">
+
+                    0
+
+                </h3>
+
+                <span>
+
+                    Happy Students
+
+                </span>
+
+            </div>
+
+            <div class="stat-card">
+
+                <div class="stat-icon">
+
+                    <i class="fa-solid fa-laptop-code"></i>
+
+                </div>
+
+                <h3 class="counter" data-target="850">
+
+                    0
+
+                </h3>
+
+                <span>
+
+                    Projects Completed
+
+                </span>
+
+            </div>
+
+            <div class="stat-card">
+
+                <div class="stat-icon">
+
+                    <i class="fa-solid fa-award"></i>
+
+                </div>
+
+                <h3 class="counter" data-target="35">
+
+                    0
+
+                </h3>
+
+                <span>
+
+                    Professional Awards
+
+                </span>
+
+            </div>
+
+            <div class="stat-card">
+
+                <div class="stat-icon">
+
+                    <i class="fa-solid fa-earth-asia"></i>
+
+                </div>
+
+                <h3 class="counter" data-target="18">
+
+                    0
+
+                </h3>
+
+                <span>
+
+                    Countries Served
+
+                </span>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!--==================================
+        Statistics End
+===================================-->
+
+
+
+
+
+<!--==================================
+        Why Choose Us Start
+===================================-->
+
+<section class="why-choose">
+
+    <div class="container">
+
+        <div class="section-header">
+
+            <span>Why Choose Us</span>
+
+            <h2>
+
+                We Create Better Digital Experience
+
+            </h2>
+
+            <p>
+
+                Professional services with quality, speed and customer satisfaction.
+
+            </p>
+
+        </div>
+
+        <div class="why-grid">
+
+            <article class="why-card">
+
+                <div class="why-icon">
+
+                    <i class="fa-solid fa-shield-halved"></i>
+
+                </div>
+
+                <h3>
+
+                    Secure Solution
+
+                </h3>
+
+                <p>
+
+                    Your project remains safe with modern security practices.
+
+                </p>
+
+            </article>
+
+            <article class="why-card">
+
+                <div class="why-icon">
+
+                    <i class="fa-solid fa-clock"></i>
+
+                </div>
+
+                <h3>
+
+                    Fast Delivery
+
+                </h3>
+
+                <p>
+
+                    We always deliver projects on time.
+
+                </p>
+
+            </article>
+
+            <article class="why-card">
+
+                <div class="why-icon">
+
+                    <i class="fa-solid fa-headset"></i>
+
+                </div>
+
+                <h3>
+
+                    Premium Support
+
+                </h3>
+
+                <p>
+
+                    Dedicated support before and after project delivery.
+
+                </p>
+
+            </article>
+
+            <article class="why-card">
+
+                <div class="why-icon">
+
+                    <i class="fa-solid fa-user-tie"></i>
+
+                </div>
+
+                <h3>
+
+                    Expert Team
+
+                </h3>
+
+                <p>
+
+                    Skilled professionals with years of experience.
+
+                </p>
+
+            </article>
+
+            <article class="why-card">
+
+                <div class="why-icon">
+
+                    <i class="fa-solid fa-lightbulb"></i>
+
+                </div>
+
+                <h3>
+
+                    Creative Ideas
+
+                </h3>
+
+                <p>
+
+                    Innovative concepts that help your business stand out.
+
+                </p>
+
+            </article>
+
+            <article class="why-card">
+
+                <div class="why-icon">
+
+                    <i class="fa-solid fa-handshake"></i>
+
+                </div>
+
+                <h3>
+
+                    Trusted Agency
+
+                </h3>
+
+                <p>
+
+                    Hundreds of satisfied clients trust our services.
+
+                </p>
+
+            </article>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!--==================================
+        Why Choose Us End
+===================================-->
+<!--==================================
+        How We Work Start
+===================================-->
+
+<section class="work-process">
+
+    <div class="container">
+
+        <div class="section-header">
+
+            <span>Our Process</span>
+
+            <h2>How We Work</h2>
+
+            <p>
+                We follow a simple but effective workflow to deliver
+                high-quality digital solutions.
+            </p>
+
+        </div>
+
+        <div class="process-grid">
+
+            <div class="process-card">
+
+                <div class="process-number">01</div>
+
+                <div class="process-icon">
+
+                    <i class="fa-solid fa-comments"></i>
+
+                </div>
+
+                <h3>Discussion</h3>
+
+                <p>
+                    We understand your business goals and requirements.
+                </p>
+
+            </div>
+
+            <div class="process-card">
+
+                <div class="process-number">02</div>
+
+                <div class="process-icon">
+
+                    <i class="fa-solid fa-pen-ruler"></i>
+
+                </div>
+
+                <h3>Planning</h3>
+
+                <p>
+                    Our team prepares a complete strategy and design.
+                </p>
+
+            </div>
+
+            <div class="process-card">
+
+                <div class="process-number">03</div>
+
+                <div class="process-icon">
+
+                    <i class="fa-solid fa-code"></i>
+
+                </div>
+
+                <h3>Development</h3>
+
+                <p>
+                    We build secure and scalable digital products.
+                </p>
+
+            </div>
+
+            <div class="process-card">
+
+                <div class="process-number">04</div>
+
+                <div class="process-icon">
+
+                    <i class="fa-solid fa-rocket"></i>
+
+                </div>
+
+                <h3>Launch</h3>
+
+                <p>
+                    Testing, deployment and long-term support.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!--==================================
+        How We Work End
+===================================-->
+
+
+
+
+
+<!--==================================
+        Portfolio Start
+===================================-->
+
+<section class="portfolio">
+
+    <div class="container">
+
+        <div class="section-header">
+
+            <span>Portfolio</span>
+
+            <h2>Recent Projects</h2>
+
+            <p>
+
+                Some of our recently completed professional projects.
+
+            </p>
+
+        </div>
+
+        <div class="portfolio-grid">
+
+            <article class="portfolio-card">
+
+                <img src="images/project1.jpg" alt="Project">
+
+                <div class="portfolio-overlay">
+
+                    <span>Website Design</span>
+
+                    <h3>E-Commerce Website</h3>
+
+                    <a href="#">
+
+                        View Project
+
+                    </a>
+
+                </div>
+
+            </article>
+
+            <article class="portfolio-card">
+
+                <img src="images/project2.jpg" alt="Project">
+
+                <div class="portfolio-overlay">
+
+                    <span>Dashboard</span>
+
+                    <h3>Admin Panel UI</h3>
+
+                    <a href="#">
+
+                        View Project
+
+                    </a>
+
+                </div>
+
+            </article>
+
+            <article class="portfolio-card">
+
+                <img src="images/project3.jpg" alt="Project">
+
+                <div class="portfolio-overlay">
+
+                    <span>Branding</span>
+
+                    <h3>Corporate Identity</h3>
+
+                    <a href="#">
+
+                        View Project
+
+                    </a>
+
+                </div>
+
+            </article>
+
+            <article class="portfolio-card">
+
+                <img src="images/project4.jpg" alt="Project">
+
+                <div class="portfolio-overlay">
+
+                    <span>Mobile App</span>
+
+                    <h3>Food Delivery UI</h3>
+
+                    <a href="#">
+
+                        View Project
+
+                    </a>
+
+                </div>
+
+            </article>
+
+            <article class="portfolio-card">
+
+                <img src="images/project5.jpg" alt="Project">
+
+                <div class="portfolio-overlay">
+
+                    <span>Landing Page</span>
+
+                    <h3>Business Landing</h3>
+
+                    <a href="#">
+
+                        View Project
+
+                    </a>
+
+                </div>
+
+            </article>
+
+            <article class="portfolio-card">
+
+                <img src="images/project6.jpg" alt="Project">
+
+                <div class="portfolio-overlay">
+
+                    <span>Corporate</span>
+
+                    <h3>Company Website</h3>
+
+                    <a href="#">
+
+                        View Project
+
+                    </a>
+
+                </div>
+
+            </article>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!--==================================
+        Portfolio End
+===================================-->
+
+
+
+
+
+<!--==================================
+        Video Section Start
+===================================-->
+
+<section class="video-section">
+
+    <div class="container">
+
+        <div class="video-content">
+
+            <span>
+
+                Watch Our Story
+
+            </span>
+
+            <h2>
+
+                See How We Build Premium Digital Products
+
+            </h2>
+
+            <p>
+
+                Watch a short presentation about our workflow,
+                quality and client success stories.
+
+            </p>
+
+            <a href="#video-popup" class="play-btn">
+
+                <i class="fa-solid fa-play"></i>
+
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!--==================================
+        Video Section End
+===================================-->
+<!--==================================
+            Team Start
+===================================-->
+
+<section class="team">
+
+    <div class="container">
+
+        <div class="section-header">
+
+            <span>Our Team</span>
+
+            <h2>Meet Our Experts</h2>
+
+            <p>
+                A passionate team dedicated to delivering quality digital solutions.
+            </p>
+
+        </div>
+
+        <div class="team-grid">
+
+            <article class="team-card">
+
+                <div class="team-image">
+
+                    <img src="images/team1.jpg" alt="Team">
+
+                    <div class="team-overlay">
+
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+
+                        <a href="#"><i class="fab fa-github"></i></a>
+
+                    </div>
+
+                </div>
+
+                <div class="team-content">
+
+                    <h3>John Smith</h3>
+
+                    <span>Founder & CEO</span>
+
+                </div>
+
+            </article>
+
+            <article class="team-card">
+
+                <div class="team-image">
+
+                    <img src="images/team2.jpg" alt="Team">
+
+                    <div class="team-overlay">
+
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+
+                        <a href="#"><i class="fab fa-dribbble"></i></a>
+
+                    </div>
+
+                </div>
+
+                <div class="team-content">
+
+                    <h3>Sarah Johnson</h3>
+
+                    <span>UI/UX Designer</span>
+
+                </div>
+
+            </article>
+
+            <article class="team-card">
+
+                <div class="team-image">
+
+                    <img src="images/team3.jpg" alt="Team">
+
+                    <div class="team-overlay">
+
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+
+                    </div>
+
+                </div>
+
+                <div class="team-content">
+
+                    <h3>David Wilson</h3>
+
+                    <span>Full Stack Developer</span>
+
+                </div>
+
+            </article>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!--==================================
+            Team End
+===================================-->
+
+
+
+<!--==================================
+        Testimonials Start
+===================================-->
+
+<section class="testimonials">
+
+    <div class="container">
+
+        <div class="section-header">
+
+            <span>Testimonials</span>
+
+            <h2>What Our Clients Say</h2>
+
+        </div>
+
+        <div class="testimonial-slider">
+
+            <div class="testimonial-item active">
+
+                <img src="images/client1.jpg" alt="Client">
+
+                <p>
+
+                    "Excellent service with outstanding support and quality."
+
+                </p>
+
+                <h4>Michael Brown</h4>
+
+                <span>Business Owner</span>
+
+            </div>
+
+            <div class="testimonial-item">
+
+                <img src="images/client2.jpg" alt="Client">
+
+                <p>
+
+                    "Professional team and amazing communication."
+
+                </p>
+
+                <h4>Emma Wilson</h4>
+
+                <span>Marketing Manager</span>
+
+            </div>
+
+            <div class="testimonial-item">
+
+                <img src="images/client3.jpg" alt="Client">
+
+                <p>
+
+                    "Highly recommended for web development."
+
+                </p>
+
+                <h4>Daniel Smith</h4>
+
+                <span>Entrepreneur</span>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!--==================================
+        Testimonials End
+===================================-->
+
+
+
+<!--==================================
+            FAQ Start
+===================================-->
+
+<section class="faq">
+
+    <div class="container">
+
+        <div class="section-header">
+
+            <span>FAQ</span>
+
+            <h2>Frequently Asked Questions</h2>
+
+        </div>
+
+        <div class="faq-wrapper">
+
+            <div class="faq-item">
+
+                <button class="faq-question">
+
+                    How long does a project take?
+
+                </button>
+
+                <div class="faq-answer">
+
+                    <p>
+
+                        Usually 7–30 working days depending on project scope.
+
+                    </p>
+
+                </div>
+
+            </div>
+
+            <div class="faq-item">
+
+                <button class="faq-question">
+
+                    Do you provide support?
+
+                </button>
+
+                <div class="faq-answer">
+
+                    <p>
+
+                        Yes, we provide dedicated support after delivery.
+
+                    </p>
+
+                </div>
+
+            </div>
+
+            <div class="faq-item">
+
+                <button class="faq-question">
+
+                    Can I update my website later?
+
+                </button>
+
+                <div class="faq-answer">
+
+                    <p>
+
+                        Absolutely. The website is built for future updates.
+
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!--==================================
+            FAQ End
+===================================-->
+
+
+
+<!--==================================
+            CTA Start
+===================================-->
+
+<section class="cta">
+
+    <div class="container">
+
+        <div class="cta-box">
+
+            <h2>
+
+                Ready To Grow Your Business?
+
+            </h2>
+
+            <p>
+
+                Let's build something amazing together.
+
+            </p>
+
+            <a href="contact.html" class="btn-primary">
+
+                Contact Us
+
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!--==================================
+            CTA End
+===================================-->
+
+
+
+<!--==================================
+            Footer
+===================================-->
 
 <footer class="footer">
 
     <div class="container">
 
-        <div class="footer-wrapper">
+        <div class="footer-grid">
 
-            <div class="footer-box">
+            <div class="footer-about">
 
-                <h2>RK Skill BD</h2>
+                <img src="images/logo.png" alt="Logo">
 
                 <p>
-                    We provide professional web development, online courses,
-                    digital tools and tutorials to help you grow your skills
-                    and business.
+
+                    Professional Digital Agency for Web Development,
+                    Courses, Tools and Tutorials.
+
                 </p>
 
             </div>
 
-            <div class="footer-box">
+            <div>
 
                 <h3>Quick Links</h3>
 
@@ -519,11 +2440,7 @@
 
                     <li><a href="tools.html">Tools</a></li>
 
-                    <li><a href="tutorial.html">Tutorial</a></li>
-
                     <li><a href="service.html">Service</a></li>
-
-                    <li><a href="about.html">About</a></li>
 
                     <li><a href="contact.html">Contact</a></li>
 
@@ -531,35 +2448,22 @@
 
             </div>
 
-            <div class="footer-box">
+            <div>
 
-                <h3>Our Services</h3>
+                <h3>Newsletter</h3>
 
-                <ul>
+                <form class="newsletter">
 
-                    <li><a href="#">Web Design</a></li>
+                    <input type="email"
+                    placeholder="Enter Your Email">
 
-                    <li><a href="#">Web Development</a></li>
+                    <button>
 
-                    <li><a href="#">SEO Service</a></li>
+                        Subscribe
 
-                    <li><a href="#">Digital Marketing</a></li>
+                    </button>
 
-                    <li><a href="#">Graphic Design</a></li>
-
-                </ul>
-
-            </div>
-
-            <div class="footer-box">
-
-                <h3>Contact Info</h3>
-
-                <p>Email : info@rkskillbd.com</p>
-
-                <p>Phone : +880 1234-567890</p>
-
-                <p>Address : Dhaka, Bangladesh</p>
+                </form>
 
             </div>
 
@@ -568,7 +2472,9 @@
         <div class="footer-bottom">
 
             <p>
+
                 © 2026 RK Skill BD. All Rights Reserved.
+
             </p>
 
         </div>
@@ -577,14 +2483,35 @@
 
 </footer>
 
-<!-- ===========================
-        Footer End
-=========================== -->
+
+
+<!--==================================
+        Floating Buttons
+===================================-->
+
+<a href="#" class="whatsapp">
+
+    <i class="fab fa-whatsapp"></i>
+
+</a>
+
+<button id="scrollTop">
+
+    <i class="fa-solid fa-arrow-up"></i>
+
+</button>
 
 
 
-    <!-- JavaScript -->
-    <script src="js/script.js"></script>
+</main>
+
+<script src="js/script.js"></script>
+<!-- Typed.js -->
+<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
+<!-- AOS -->
+<link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css">
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
 
 </body>
 

@@ -37,31 +37,75 @@
   if (document.fonts && document.fonts.ready) { document.fonts.ready.then(syncHeaderHeight); }
 
   /* ---------- Mobile nav ---------- */
+  const navLinksEl = document.querySelector(".nav-links");
+  const navBurgerEl = document.querySelector(".nav-burger");
+
+  function closeMobileNav() {
+    if (!navLinksEl || !navLinksEl.classList.contains("open")) return;
+    navLinksEl.classList.remove("open");
+    navBurgerEl && navBurgerEl.classList.remove("open");
+    document.body.style.overflow = "";
+  }
+
+  function openMobileNav() {
+    navLinksEl && navLinksEl.classList.add("open");
+    navBurgerEl && navBurgerEl.classList.add("open");
+    document.body.style.overflow = "hidden";
+  }
+
   document.addEventListener("click", function (e) {
     const burger = e.target.closest(".nav-burger");
     const link = e.target.closest(".nav-links a");
-    const navLinks = document.querySelector(".nav-links");
     if (burger) {
-      burger.classList.toggle("open");
-      const isOpen = navLinks && navLinks.classList.toggle("open");
-      document.body.style.overflow = isOpen ? "hidden" : "";
-    } else if (link && navLinks && navLinks.classList.contains("open")) {
-      navLinks.classList.remove("open");
-      document.querySelector(".nav-burger").classList.remove("open");
-      document.body.style.overflow = "";
+      if (navLinksEl && navLinksEl.classList.contains("open")) {
+        closeMobileNav();
+      } else {
+        openMobileNav();
+      }
+    } else if (link) {
+      closeMobileNav();
+    } else if (
+      navLinksEl &&
+      navLinksEl.classList.contains("open") &&
+      !e.target.closest(".nav-links")
+    ) {
+      /* Tap outside the open menu (the dimmed backdrop area) closes it. */
+      closeMobileNav();
     }
   });
 
-  window.addEventListener("resize", function () {
-    if (window.innerWidth > 760) {
-      const navLinks = document.querySelector(".nav-links");
-      const burger = document.querySelector(".nav-burger");
-      if (navLinks && navLinks.classList.contains("open")) {
-        navLinks.classList.remove("open");
-        burger && burger.classList.remove("open");
-        document.body.style.overflow = "";
+  /* Belt-and-braces: some Android WebViews fire touchend without a
+     synthesized click on fixed-position overlays, so mirror the same
+     outside-tap / link-tap closing logic there too. */
+  document.addEventListener(
+    "touchend",
+    function (e) {
+      if (!navLinksEl || !navLinksEl.classList.contains("open")) return;
+      const burger = e.target.closest(".nav-burger");
+      const link = e.target.closest(".nav-links a");
+      if (burger) return; /* handled by click */
+      if (link || !e.target.closest(".nav-links")) {
+        closeMobileNav();
       }
-    }
+    },
+    { passive: true }
+  );
+
+  window.addEventListener("resize", function () {
+    if (window.innerWidth > 760) closeMobileNav();
+  });
+
+  window.addEventListener("keydown", function (e) {
+    if (e.key === "Escape") closeMobileNav();
+  });
+
+  /* Android Chrome can restore a page from the back/forward cache with the
+     menu's "open" class still applied from before navigation — this is
+     what makes the menu bar appear "stuck" and not hide. Force-reset on
+     every page show, including bfcache restores. */
+  window.addEventListener("pageshow", closeMobileNav);
+  document.addEventListener("visibilitychange", function () {
+    if (document.visibilityState === "visible") closeMobileNav();
   });
 
   /* ---------- Active nav link by current page ---------- */

@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://rk-skill-bd.vercel.app/sitemap.xml

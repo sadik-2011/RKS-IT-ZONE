@@ -4,7 +4,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>RKS IT ZONE — Web, App &amp; Bot Development Studio in Bangladesh</title>
+    <script>
+(function () {
+  try {
+    var sw = (window.screen && screen.width) || 0;
+    /* If the physical screen is phone/tablet-sized but the browser has
+       forced a much wider layout viewport (e.g. Chrome/Brave "Desktop site"
+       mode), rewrite the viewport meta tag so the real responsive CSS
+       breakpoints kick in instead of the shrunk-down desktop layout. */
+    if (sw && sw < 900 && window.innerWidth > sw + 150) {
+      var vp = document.querySelector('meta[name="viewport"]');
+      if (vp) vp.setAttribute('content', 'width=' + sw + ', initial-scale=1');
+    }
+  } catch (e) {}
+})();
+</script>
+<title>RKS IT ZONE — Web, App &amp; Bot Development Studio in Bangladesh</title>
     <meta name="description"
         content="RKS IT ZONE is a Bangladesh-based development studio building responsive websites, mobile apps, Telegram bots, and developer tools — with a transparent, security-first workflow.">
     <meta name="keywords" content="RKS IT ZONE, RK SKILL BD, web development Bangladesh, app development Bangladesh, Telegram bot development, website design Dhaka, software studio Bangladesh, custom bot development, IT company Bangladesh">

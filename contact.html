@@ -3,6 +3,21 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script>
+(function () {
+  try {
+    var sw = (window.screen && screen.width) || 0;
+    /* If the physical screen is phone/tablet-sized but the browser has
+       forced a much wider layout viewport (e.g. Chrome/Brave "Desktop site"
+       mode), rewrite the viewport meta tag so the real responsive CSS
+       breakpoints kick in instead of the shrunk-down desktop layout. */
+    if (sw && sw < 900 && window.innerWidth > sw + 150) {
+      var vp = document.querySelector('meta[name="viewport"]');
+      if (vp) vp.setAttribute('content', 'width=' + sw + ', initial-scale=1');
+    }
+  } catch (e) {}
+})();
+</script>
 <title>Contact — RKS IT ZONE</title>
 <meta name="description" content="Get in touch with RK SKILL BD to start your website, app, or bot project.">
 <meta name="keywords" content="contact RKS IT ZONE, hire web developer Bangladesh, get a quote website, contact Dhaka IT company">
@@ -68,7 +83,7 @@
 <section class="section" style="padding-top:10px">
   <div class="container hero-grid" style="align-items:start">
     <form action="https://formsubmit.co/rksitzone@gmail.com" method="POST" class="js-contact-form"
-            style="max-width:640px;margin:0 auto;background:var(--surface);border:1px solid var(--border);border-radius:var(--radius-l);padding:36px">
+            style="max-width:640px;width:100%;justify-self:center;background:var(--surface);border:1px solid var(--border);border-radius:var(--radius-l);padding:36px">
             <!-- Disable Captcha -->
             <input type="hidden" name="_captcha" value="false">
             <!-- Email Subject -->

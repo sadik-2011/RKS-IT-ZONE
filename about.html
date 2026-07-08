@@ -3,6 +3,21 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script>
+(function () {
+  try {
+    var sw = (window.screen && screen.width) || 0;
+    /* If the physical screen is phone/tablet-sized but the browser has
+       forced a much wider layout viewport (e.g. Chrome/Brave "Desktop site"
+       mode), rewrite the viewport meta tag so the real responsive CSS
+       breakpoints kick in instead of the shrunk-down desktop layout. */
+    if (sw && sw < 900 && window.innerWidth > sw + 150) {
+      var vp = document.querySelector('meta[name="viewport"]');
+      if (vp) vp.setAttribute('content', 'width=' + sw + ', initial-scale=1');
+    }
+  } catch (e) {}
+})();
+</script>
 <title>About Us — RKS IT ZONE</title>
 <meta name="description" content="Learn about RK SKILL BD, a Bangladesh-based web, app, and bot development studio.">
 <meta name="keywords" content="about RKS IT ZONE, RK SKILL BD team, Bangladesh IT studio, our story, software company Bangladesh">

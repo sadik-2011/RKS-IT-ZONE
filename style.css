@@ -318,6 +318,10 @@ input,textarea{ font-family:inherit; }
 .field input:focus, .field textarea:focus, .field select:focus{ border-color:var(--primary-2); box-shadow:0 0 0 3px color-mix(in srgb, var(--primary) 20%, transparent); outline:none; }
 .field textarea{ min-height:140px; resize:vertical; }
 .form-note{ font-size:.78rem; color:var(--text-dim); margin-top:10px; }
+.form-status{ font-size:.88rem; margin-top:14px; text-align:center; min-height:1.2em; transition:opacity .2s ease; }
+.form-status:empty{ margin-top:0; }
+.form-status.is-success{ color:#2ecc71; }
+.form-status.is-error{ color:#ff5c5c; }
 .toast{
   position:fixed; bottom:24px; right:24px; background:var(--surface); border:1px solid var(--accent);
   color:var(--text); padding:14px 20px; border-radius:var(--radius-s); box-shadow:var(--shadow);

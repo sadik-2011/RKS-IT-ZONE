@@ -208,17 +208,61 @@
     window.__rkToastT = setTimeout(function () { toast.classList.remove("show"); }, 3200);
   };
 
-  /* ---------- Contact form (frontend-only, no backend) ---------- */
+  /* ---------- Contact form (submits via FormSubmit AJAX endpoint) ---------- */
   document.querySelectorAll(".js-contact-form").forEach(function (form) {
+    const statusEl = form.querySelector(".form-status");
+    const submitBtn = form.querySelector('button[type="submit"]');
+
+    function setStatus(msg, state) {
+      if (!statusEl) return;
+      statusEl.textContent = msg;
+      statusEl.classList.remove("is-success", "is-error");
+      if (state) statusEl.classList.add(state);
+    }
+
     form.addEventListener("submit", function (e) {
       e.preventDefault();
-      const name = form.querySelector('[name="name"]');
-      if (name && !name.value.trim()) {
-        name.focus();
+
+      if (!form.checkValidity()) {
+        form.reportValidity();
         return;
       }
-      rkToast("Message ready — thanks! We reply within 24 hours.");
-      form.reset();
+
+      const originalLabel = submitBtn ? submitBtn.textContent : "";
+      if (submitBtn) {
+        submitBtn.disabled = true;
+        submitBtn.textContent = "Sending…";
+      }
+      setStatus("Sending your message…", "");
+
+      const ajaxAction = form.action.replace(
+        "https://formsubmit.co/",
+        "https://formsubmit.co/ajax/"
+      );
+
+      fetch(ajaxAction, {
+        method: "POST",
+        headers: { Accept: "application/json" },
+        body: new FormData(form),
+      })
+        .then(function (res) {
+          if (!res.ok) throw new Error("Request failed");
+          return res.json();
+        })
+        .then(function () {
+          setStatus("✅ Message sent successfully! We'll get back to you within 24 hours.", "is-success");
+          rkToast("Message sent successfully!");
+          form.reset();
+        })
+        .catch(function () {
+          setStatus("❌ Something went wrong. Please try again or email us directly at rksitzone@gmail.com.", "is-error");
+        })
+        .finally(function () {
+          if (submitBtn) {
+            submitBtn.disabled = false;
+            submitBtn.textContent = originalLabel;
+          }
+        });
     });
   });
 

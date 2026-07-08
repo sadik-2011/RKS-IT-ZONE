@@ -1,4 +1,4 @@
-/* RK SKILL BD — shared front-end behaviour (no frameworks, no build step) */
+/* RKS IT ZONE — shared front-end behaviour (no frameworks, no build step) */
 
 (function () {
   "use strict";

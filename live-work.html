@@ -3,8 +3,23 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script>
+(function () {
+  try {
+    var sw = (window.screen && screen.width) || 0;
+    /* If the physical screen is phone/tablet-sized but the browser has
+       forced a much wider layout viewport (e.g. Chrome/Brave "Desktop site"
+       mode), rewrite the viewport meta tag so the real responsive CSS
+       breakpoints kick in instead of the shrunk-down desktop layout. */
+    if (sw && sw < 900 && window.innerWidth > sw + 150) {
+      var vp = document.querySelector('meta[name="viewport"]');
+      if (vp) vp.setAttribute('content', 'width=' + sw + ', initial-scale=1');
+    }
+  } catch (e) {}
+})();
+</script>
 <title>Live Work — RKS IT ZONE</title>
-<meta name="description" content="Live, in-production websites, shops, and bots built by RK SKILL BD.">
+<meta name="description" content="Live, in-production websites, shops, and bots built by RKS IT ZONE.">
 <meta name="keywords" content="RKS IT ZONE live projects, live websites Bangladesh, ecommerce shop examples, Telegram bot examples, web development portfolio">
 <meta name="robots" content="index, follow">
 <meta name="author" content="RKS IT ZONE">
@@ -15,7 +30,7 @@
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="RKS IT ZONE">
 <meta property="og:title" content="Live Work — RKS IT ZONE">
-<meta property="og:description" content="Live, in-production websites, shops, and bots built by RK SKILL BD.">
+<meta property="og:description" content="Live, in-production websites, shops, and bots built by RKS IT ZONE.">
 <meta property="og:url" content="https://rksitzone.vercel.app/live-work.html">
 <meta property="og:image" content="https://rksitzone.vercel.app/images/logo.svg">
 <meta property="og:locale" content="en_US">
@@ -23,7 +38,7 @@
 <!-- Twitter -->
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Live Work — RKS IT ZONE">
-<meta name="twitter:description" content="Live, in-production websites, shops, and bots built by RK SKILL BD.">
+<meta name="twitter:description" content="Live, in-production websites, shops, and bots built by RKS IT ZONE.">
 <meta name="twitter:image" content="https://rksitzone.vercel.app/images/logo.svg">
 <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
 <link rel="stylesheet" href="style.css">
@@ -33,7 +48,7 @@
 <header class="site-header">
   <div class="navbar container">
     <a href="index.html" class="brand">
-      <img src="images/logo.svg" alt="RK SKILL BD logo" width="36" height="36">
+      <img src="images/logo.svg" alt="RKS IT ZONE logo" width="36" height="36">
       <span>RKS IT ZONE<small>Web · App · Bot Studio</small></span>
     </a>
     <nav class="nav-links" aria-label="Primary">

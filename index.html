@@ -4,10 +4,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>RKS IT ZONE — Web, App &amp; Bot Development Studio in Bangladesh</title>
+    <script>
+(function () {
+  try {
+    var sw = (window.screen && screen.width) || 0;
+    /* If the physical screen is phone/tablet-sized but the browser has
+       forced a much wider layout viewport (e.g. Chrome/Brave "Desktop site"
+       mode), rewrite the viewport meta tag so the real responsive CSS
+       breakpoints kick in instead of the shrunk-down desktop layout. */
+    if (sw && sw < 900 && window.innerWidth > sw + 150) {
+      var vp = document.querySelector('meta[name="viewport"]');
+      if (vp) vp.setAttribute('content', 'width=' + sw + ', initial-scale=1');
+    }
+  } catch (e) {}
+})();
+</script>
+<title>RKS IT ZONE — Web, App &amp; Bot Development Studio in Bangladesh</title>
     <meta name="description"
         content="RKS IT ZONE is a Bangladesh-based development studio building responsive websites, mobile apps, Telegram bots, and developer tools — with a transparent, security-first workflow.">
-    <meta name="keywords" content="RKS IT ZONE, RK SKILL BD, web development Bangladesh, app development Bangladesh, Telegram bot development, website design Dhaka, software studio Bangladesh, custom bot development, IT company Bangladesh">
+    <meta name="keywords" content="RKS IT ZONE, web development Bangladesh, app development Bangladesh, Telegram bot development, website design Dhaka, software studio Bangladesh, custom bot development, IT company Bangladesh">
 <meta name="robots" content="index, follow">
 <meta name="author" content="RKS IT ZONE">
 <meta name="theme-color" content="#0b0f14">
@@ -35,7 +50,7 @@
       "@context": "https://schema.org",
       "@type": "Organization",
       "name": "RKS IT ZONE",
-      "alternateName": "RK SKILL BD",
+      "alternateName": "RKS IT ZONE",
       "url": "https://rksitzone.vercel.app/",
       "logo": "https://rksitzone.vercel.app/images/logo.svg",
       "description": "RKS IT ZONE is a Bangladesh-based development studio building responsive websites, mobile apps, Telegram bots, and developer tools.",
@@ -120,7 +135,7 @@
                 <div class="hero-panel">
                     <div class="dots"><span></span><span></span><span></span></div>
                     <pre class="mono"
-                        data-type-lines='["<span class=\"cm\">// deploying your idea…</span>","<span class=\"kw\">const</span> studio = <span class=\"kw\">new</span> RKSkillBD();","studio.<span class=\"st\">build</span>([","  <span class=\"st\">\"website\"</span>, <span class=\"st\">\"mobile app\"</span>,","  <span class=\"st\">\"telegram bot\"</span>, <span class=\"st\">\"seo\"</span>","]);","studio.<span class=\"st\">deploy</span>(); <span class=\"cm\">// ✓ live in prod</span>"]'><span class="type-cursor"></span></pre>
+                        data-type-lines='["<span class=\"cm\">// deploying your idea…</span>","<span class=\"kw\">const</span> studio = <span class=\"kw\">new</span> RKSITZONE();","studio.<span class=\"st\">build</span>([","  <span class=\"st\">\"website\"</span>, <span class=\"st\">\"mobile app\"</span>,","  <span class=\"st\">\"telegram bot\"</span>, <span class=\"st\">\"seo\"</span>","]);","studio.<span class=\"st\">deploy</span>(); <span class=\"cm\">// ✓ live in prod</span>"]'><span class="type-cursor"></span></pre>
                 </div>
             </div>
         </section>
@@ -163,7 +178,7 @@
                     <div class="card">
                         <div class="browser-frame">
                             <div class="browser-bar"><span></span><span></span><span></span>
-                                <div class="url mono">shop.rkskillbd.dev</div>
+                                <div class="url mono">shop.rksitzone.dev</div>
                             </div>
                             <div class="browser-screen" style="--gscolor:var(--accent)">
                                 <div class="glow"></div>
@@ -182,7 +197,7 @@
                     <div class="card">
                         <div class="browser-frame">
                             <div class="browser-bar"><span></span><span></span><span></span>
-                                <div class="url mono">t.me/rkskillbot</div>
+                                <div class="url mono">t.me/rksitzonebot</div>
                             </div>
                             <div class="browser-screen" style="--gscolor:var(--warm)">
                                 <div class="glow"></div>
